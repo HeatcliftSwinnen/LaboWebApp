@@ -1,6 +1,7 @@
 package com.example.labowebapp;
 
 import java.io.*;
+
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -22,6 +23,5 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
-    public void destroy() {
-    }
+
 }

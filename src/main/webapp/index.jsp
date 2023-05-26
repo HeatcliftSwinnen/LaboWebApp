@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+    <title>Labo WebApp</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<h1> <%= "test" %>
+    <a href= "Nos restaurants">Nos restaurants</a>
+    <a href= "contact">contact</a>
+    <a href= "Inscriptions">Inscriptions</a>
 </body>
 </html>

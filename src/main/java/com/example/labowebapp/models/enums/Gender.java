@@ -1,2 +1,6 @@
-package com.example.labowebapp.models.enums;public enum Gender {
+package com.example.labowebapp.models.enums;
+
+public enum Gender {
+    Monsieur,
+    Madame
 }
