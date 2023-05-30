@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
 </head>
 <body>
+<div class="container">
 <header>
     <nav>
         <ul>
@@ -17,5 +18,6 @@
         </ul>
     </nav>
 </header>
+</div>
 </body>
 </html>
