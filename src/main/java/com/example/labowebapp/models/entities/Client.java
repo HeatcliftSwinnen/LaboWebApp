@@ -32,6 +32,9 @@ public class Client implements Serializable {
     @Column(name = "mail",length = 60)
     private  String mail ;
 
+    @Column(name = "mot_de_passe")
+    private String name;
+
     @Embedded
     private Adresse adresse;
 
