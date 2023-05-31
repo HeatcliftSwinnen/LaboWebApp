@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../../styles/inscription.css">
 </head>
 <body>
 <h1>Inscription</h1>

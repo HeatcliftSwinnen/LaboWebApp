@@ -33,7 +33,7 @@ public class Client implements Serializable {
     private  String mail ;
 
     @Column(name = "mot_de_passe")
-    private String name;
+    private String password;
 
     @Embedded
     private Adresse adresse;

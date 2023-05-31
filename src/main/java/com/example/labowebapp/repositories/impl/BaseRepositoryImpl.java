@@ -13,7 +13,7 @@ public class BaseRepositoryImpl<TKey,TEntity> implements BaseRepository<TKey,TEn
     protected EntityManagerFactory emf;
     protected EntityManager em;
 
-    public BaseRepositoryImpl(EntityManagerFactory emf, EntityManager em) {
+    public BaseRepositoryImpl() {
         this.emf = Persistence.createEntityManagerFactory("LaboWebApp");
         this.em = emf.createEntityManager();
     }
