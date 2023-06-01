@@ -45,8 +45,8 @@ public class ClientForm {
     @Size(max = 20, message = "Taille max fixée à 20 caractères")
     private String telephoneNumber;
 
-    public ClientForm(String firstname) {
-        this.firstname = firstname;
+    public ClientForm(String email) {
+        this.mail = email;
     }
 
     public Client toEntity(){

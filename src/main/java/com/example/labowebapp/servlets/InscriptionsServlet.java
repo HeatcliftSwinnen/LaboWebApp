@@ -40,9 +40,9 @@ public class InscriptionsServlet extends HttpServlet {
         if(constraints.size() > 0){
 
             for (ConstraintViolation<ClientForm> constraint : constraints) {
-                if(constraint.getPropertyPath().toString().equals("name")){
+                if(constraint.getPropertyPath().toString().equals("mail")){
 
-                    request.setAttribute("nameError",constraint.getMessage());
+                    request.setAttribute("mailError",constraint.getMessage());
                 }
                 System.out.println(constraint.getRootBeanClass().getSimpleName()+
                         "." + constraint.getPropertyPath() + " " + constraint.getMessage());
@@ -54,8 +54,4 @@ public class InscriptionsServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/index.jsp");
         }
     }
-
-
-
-
 }
