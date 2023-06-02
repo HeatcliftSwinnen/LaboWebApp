@@ -15,4 +15,6 @@ public interface ClientService {
     Client update(Long id, ClientForm a);
 
     Client delete(Long id);
+
+    Client findByEmail(String email);
 }

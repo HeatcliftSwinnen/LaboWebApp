@@ -5,6 +5,7 @@ import com.example.labowebapp.models.entities.Client;
 import com.example.labowebapp.models.enums.Gender;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
@@ -25,10 +26,8 @@ public class ClientForm {
     @Size(max = 60, message = "Taille max fixée à 60 caractères")
     private String lastname;
 
-    @NotBlank(message = "Champ Obligatoire")
     private LocalDate birthdate;
 
-    @NotBlank(message = "Champ Obligatoire")
     private Gender gender;
 
     @NotBlank(message = "Champ Obligatoire")
@@ -38,22 +37,19 @@ public class ClientForm {
     @NotBlank(message = "Champ Obligatoire")
     private String password;
 
-    @NotBlank(message = "Champ Obligatoire")
+    @NotNull(message = "Champ Obligatoire")
     private Adresse adresse;
 
     @NotBlank(message = "Champ Obligatoire")
     @Size(max = 20, message = "Taille max fixée à 20 caractères")
     private String telephoneNumber;
 
-    public ClientForm(String email) {
-        this.mail = email;
-    }
-
     public Client toEntity(){
         return Client.builder()
                 .firstname(getFirstname())
                 .lastname(getLastname())
                 .birthdate(getBirthdate())
+                .gender(getGender())
                 .mail(getMail())
                 .password(getPassword())
                 .adresse(getAdresse())

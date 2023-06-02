@@ -11,6 +11,7 @@ public class Restaurant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(insertable = false,updatable = false)
     private String name;
 
     @Embedded

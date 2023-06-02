@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Inscriptions</h1>
-    <form action="../inscriptions" method="post">
+    <form action="inscriptions" method="post">
         <label for="firstname">Prénom :</label>
         <input type="text" id="firstname" name="firstname" maxlength="50" required>
 
@@ -25,27 +25,27 @@
 
         <label for="gender">Genre :</label>
         <select id="gender" name="gender" required>
-            <option value="masculin">Masculin</option>
-            <option value="feminin">Féminin</option>
+            <option value="Monsieur">Monsieur</option>
+            <option value="Madame">Madame</option>
         </select><br><br>
 
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="mot_de_passe">Mot de passe :</label>
-        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
 
         <label for="adresse">Adresse :</label>
         <textarea id="adresse" name="adresse" required></textarea><br><br>
 
-        <label for="telephone">Numéro de téléphone :</label>
-        <input type="tel" id="telephone" name="telephone" required><br><br>
+        <label for="telephoneNumber">Numéro de téléphone :</label>
+        <input type="tel" id="telephoneNumber" name="telephoneNumber" required><br><br>
 
 
     <c:if test="${nameError != null}">
         <span style="color: red">${nameError}</span>
     </c:if>
-        <button type="submit">enregistrement</button>
+        <button type="submit">S'inscrire</button>
 
     </form>
 </body>

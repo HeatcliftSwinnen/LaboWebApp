@@ -9,4 +9,5 @@ import java.io.Serializable;
 @Named
 @SessionScoped
 public class ClientRepositoryImpl extends BaseRepositoryImpl<Long,Client> implements ClientRepository,Serializable {
+
 }

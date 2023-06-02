@@ -14,7 +14,7 @@ public class BaseRepositoryImpl<TKey,TEntity> implements BaseRepository<TKey,TEn
     protected EntityManager em;
 
     public BaseRepositoryImpl() {
-        this.emf = Persistence.createEntityManagerFactory("LaboWebApp");
+        this.emf = Persistence.createEntityManagerFactory("webapp");
         this.em = emf.createEntityManager();
     }
 
@@ -45,4 +45,5 @@ public class BaseRepositoryImpl<TKey,TEntity> implements BaseRepository<TKey,TEn
     public TEntity delete(TKey id) {
         return null;
     }
+
 }

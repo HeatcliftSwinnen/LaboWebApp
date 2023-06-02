@@ -14,4 +14,6 @@ List<TEntity> getall();
 TEntity update (TEntity entity);
 
 TEntity delete(TKey id);
+
 }
+

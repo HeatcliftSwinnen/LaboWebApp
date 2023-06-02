@@ -41,4 +41,10 @@ public class ClientServiceImpl implements ClientService, Serializable {
     public Client delete(Long id) {
         return null;
     }
+
+    @Override
+    public Client findByEmail(String email) {
+        return null;
+    }
+
 }
